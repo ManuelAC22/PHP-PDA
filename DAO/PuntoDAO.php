@@ -50,4 +50,26 @@ class PuntoDAO {
         return $lista;
     }
 
+    public function GrabarPunto(PuntoBean $objbean)
+    {
+        $i = 0;
+        try {
+            $titulo = $objbean->getTitulo();
+            $dirigidos = $objbean->getDirigidos();
+            $necesidad = $objbean->getNecesidad();
+            $fechacierre = $objbean->getFechacierre();
+            $latitud = $objbean->getLatitud();
+            $longitud = $objbean->getLongitud();
+            $DNIUSUARIO = $objbean->getDNIUSUARIO();
+            $sql = "INSERT INTO `puntoacopio`( `titulo`, `dirigidos`, `necesidad`, `fechacierre`, `latitud`, `longitud`, `DNIUSUARIO`)  VALUES ('$titulo','$dirigidos','$necesidad','$fechacierre','$latitud','$longitud','$DNIUSUARIO')";
+            $objc = new ConexionBD();
+            $cn = $objc->getconecionBD();
+            $i = mysqli_query($cn, $sql);
+            mysqli_close($cn);
+        } catch (Exception $exc) {
+            $i = 0;
+        }
+        return $i;
+    }
+
 }

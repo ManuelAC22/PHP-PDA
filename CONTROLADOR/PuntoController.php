@@ -23,4 +23,22 @@ switch ($op){
         echo json_encode($lista);
         break;
     }
+    case 3:{
+        $objdao=new PuntoDAO();
+        $objbean=new PuntoBean();
+        $objbean->setTitulo($_REQUEST['titulo']);
+        $objbean->setDirigidos($_REQUEST['dirigidos']);
+        $objbean->setNecesidad($_REQUEST['necesidad']);
+        $objbean->setFechacierre($_REQUEST['fechacierre']);
+        $objbean->setLatitud($_REQUEST['latitud']);
+        $objbean->setLongitud($_REQUEST['longitud']);
+        $objbean->setDNIUSUARIO($_REQUEST['DNIUSUARIO']);
+        $i=$objdao->GrabarPunto($objbean);
+        if($i==1){
+            echo json_encode(1);
+        }else{
+            echo json_encode(0);
+        }
+        
+    }
 }
