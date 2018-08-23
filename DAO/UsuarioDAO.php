@@ -64,4 +64,18 @@ class UsuarioDAO {
         
     }
 
+    public function UpdatePunto(UsuarioBean $objbean){
+        $i = 0;
+        try {
+            $dni = $objbean->getDni();
+            $sql = "UPDATE `usuario` SET `estado`=0 WHERE `DNI`='$dni'";
+            $objc = new ConexionBD();
+            $cn = $objc->getconecionBD();
+            $i = mysqli_query($cn, $sql);
+            mysqli_close($cn);
+        } catch (Exception $exc) {
+            $i = 0;
+        }
+        return $i;
+    }
 }

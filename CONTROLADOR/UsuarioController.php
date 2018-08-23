@@ -46,4 +46,15 @@ switch ($op){
         }
         break;
     }
+    case 4:{
+        $objdao=new UsuarioDAO();
+        $objbean=new UsuarioBean();
+        $objbean->setDni($_REQUEST['dni']);
+        $i=$objdao->UpdatePunto($objbean);
+        if($i==1){
+            echo json_encode(true);
+        }else{
+            echo json_encode(false);
+        }
+    }
 }

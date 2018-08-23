@@ -71,5 +71,4 @@ class PuntoDAO {
         }
         return $i;
     }
-
 }
