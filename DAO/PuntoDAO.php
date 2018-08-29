@@ -28,7 +28,7 @@ class PuntoDAO {
     public function BuscarxTitulo(PuntoBean $objbean){
         try {
             $titulo = $objbean->getTitulo();
-            $sql = "SELECT P.titulo, P.dirigidos, P.necesidad, P.fechacierre, P.latitud, P.longitud, SUM(O.puntaje),COUNT(O.idopinion),P.DNIUSUARIO FROM `puntoacopio` P JOIN opinion O ON O.tituloacopio=P.titulo where `titulo` = '$titulo'";
+            $sql = "SELECT P.titulo, P.dirigidos, P.necesidad, P.fechacierre, P.latitud, P.longitud, IF(ISNULL(SUM(O.puntaje)),0,SUM(O.puntaje)),COUNT(O.idopinion),P.DNIUSUARIO FROM `puntoacopio` P JOIN opinion O ON O.tituloacopio=P.titulo where `titulo` = '$titulo'";
             $objc = new ConexionBD();
             $cn = $objc->getconecionBD();
             $rs = mysqli_query($cn, $sql);
@@ -41,7 +41,7 @@ class PuntoDAO {
                         'fechacierre' => $fila['fechacierre'],
                         'latitud' => $fila['latitud'],
                         'longitud' => $fila['longitud'],
-                        'puntajetotal' => $fila['SUM(O.puntaje)'],
+                        'puntajetotal' => $fila['IF(ISNULL(SUM(O.puntaje)),0,SUM(O.puntaje))'],
                         'cantidad' => $fila['COUNT(O.idopinion)'],
                         'dni' => $fila['DNIUSUARIO']));
             }
