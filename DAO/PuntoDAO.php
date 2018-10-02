@@ -4,7 +4,7 @@ require_once '../UTIL/ConexionBD.php';
 class PuntoDAO {
     public function ListarPuntos(){
         try {
-            $sql = "SELECT `titulo`, `dirigidos`, `necesidad`, `fechacierre`, `latitud`, `longitud`, `DNIUSUARIO` FROM `puntoacopio`";
+            $sql = "SELECT `titulo`, `dirigidos`, `necesidad`, `fechacierre`, `latitud`, `longitud`, `DNIUSUARIO` FROM `puntoacopio` where `fechacierre`> CURRENT_DATE ";
             $objc = new ConexionBD();
             $cn = $objc->getconecionBD();
             $rs = mysqli_query($cn, $sql);
