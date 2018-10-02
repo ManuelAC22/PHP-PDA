@@ -1,9 +1,8 @@
 <?php class ConexionBD {
-    const SERVER="localhost";
-    const USER="root";
-    const PASS="";
+    const SERVER="pda.vrammdev.com";
+    const USER="giampieer24";
+    const PASS="Gi@mpieer24-pe";
     const DATABASE="pda";
-    const PORT="3306";
     private  $cn=null;
     
     public function getconecionBD() {
