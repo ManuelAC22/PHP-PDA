@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="562e130c-8a41-4f1b-98ee-728b02223554" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTROLADOR/OpinionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLADOR/OpinionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTROLADOR/PuntoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLADOR/PuntoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTROLADOR/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLADOR/UsuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/ConexionBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/ConexionBD.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,38 +23,53 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="log" value="2" />
-          <entry key="php" value="5" />
+          <entry key="php" value="11" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Log" value="2" />
-          <entry key="PHP" value="5" />
+          <entry key="PHP" value="11" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="5" />
+          <entry key="php" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="5" />
+          <entry key="PHP" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UTIL/ConexionBD.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="57">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BEAN/OpinionBean.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BEAN/PuntoBean.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -79,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CONTROLADOR/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
@@ -89,12 +100,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/error.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/DAO/OpinionDAO.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DAO/PuntoDAO.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DAO/UsuarioDAO.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -105,10 +122,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/UTIL/ConexionBD.php" />
         <option value="$PROJECT_DIR$/CONTROLADOR/PuntoController.php" />
         <option value="$PROJECT_DIR$/CONTROLADOR/OpinionController.php" />
         <option value="$PROJECT_DIR$/CONTROLADOR/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/UTIL/ConexionBD.php" />
       </list>
     </option>
   </component>
@@ -140,12 +157,22 @@
             <path>
               <item name="pda" type="b2602c69:ProjectViewProjectNode" />
               <item name="pda" type="462c0819:PsiDirectoryNode" />
+              <item name="BEAN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pda" type="462c0819:PsiDirectoryNode" />
               <item name="CONTROLADOR" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pda" type="b2602c69:ProjectViewProjectNode" />
               <item name="pda" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pda" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pda" type="b2602c69:ProjectViewProjectNode" />
@@ -192,12 +219,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538537504165</updated>
       <workItem from="1538537505952" duration="830000" />
-      <workItem from="1538538512022" duration="27000" />
+      <workItem from="1538538512022" duration="96000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="857000" />
+    <option name="totallyTimeSpent" value="926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -243,13 +270,6 @@
     <entry file="file://$PROJECT_DIR$/db/pda.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/UTIL/ConexionBD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/error.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="209">
@@ -272,6 +292,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CONTROLADOR/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/OpinionDAO.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/PuntoDAO.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/UsuarioDAO.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BEAN/OpinionBean.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BEAN/PuntoBean.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UTIL/ConexionBD.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />

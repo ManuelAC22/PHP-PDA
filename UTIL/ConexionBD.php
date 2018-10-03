@@ -1,7 +1,7 @@
 <?php
 class ConexionBD {
   const SERVER = "localhost";
-  const USER = "giampieer24";
+  const USER = "root";
   const PASS = "Gi@mpieer24-pe";
   const DATABASE = "pda";
   private  $cn = null;
