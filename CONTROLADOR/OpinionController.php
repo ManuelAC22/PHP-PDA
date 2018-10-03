@@ -1,7 +1,7 @@
 <?php
 
-require_once '../Bean/OpinionBean.php';
-require_once '../Dao/OpinionDAO.php';
+require_once '../BEAN/OpinionBean.php';
+require_once '../DAO/OpinionDAO.php';
 
 header('Content-Type: application/json');
 $op=$_REQUEST['op'];

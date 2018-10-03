@@ -1,7 +1,7 @@
 <?php
 
-require_once '../Bean/UsuarioBean.php';
-require_once '../Dao/UsuarioDAO.php';
+require_once '../BEAN/UsuarioBean.php';
+require_once '../DAO/UsuarioDAO.php';
 
 header('Content-Type: application/json');
 $op=$_REQUEST['op'];

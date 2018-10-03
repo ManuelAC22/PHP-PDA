@@ -1,7 +1,7 @@
 <?php
 
-require_once '../Bean/PuntoBean.php';
-require_once '../Dao/PuntoDAO.php';
+require_once '../BEAN/PuntoBean.php';
+require_once '../DAO/PuntoDAO.php';
 
 header('Content-Type: application/json');
 $op=$_REQUEST['op'];
