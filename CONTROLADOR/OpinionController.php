@@ -9,7 +9,7 @@ switch ($op){
     case 1:{ 
         $objdao=new OpinionDAO();
         $objbean=new OpinionBean();
-        $objbean->setIdopinion($objdao -> GenerarCodigo());
+        $objbean->setIdopinion($_REQUEST['idopinion']);
         $objbean->setTituloacopio($_REQUEST['tituloacopio']);
         $objbean->setDniusuario($_REQUEST['dniusuario']);
         $objbean->setOpinion($_REQUEST['opinion']);
